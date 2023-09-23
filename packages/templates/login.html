@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <script defer src="/js/script.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-  
 </head>
 
 <body>
+  <meta charset="UTF-8">
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="/register" method="POST">
+		<form action="/models/register.js" method="POST">
 			<h1>Create Account</h1>
 			<div class="social-container">
-				<div class="h_google_button h_google_center" data="google"><p class="png-google" alt=""></p><span class="h_google_text">Sign in with Google</span></div>
+				<a href="https://www.google.com" class="social"><i class="fa-brands fa-google"></i></a>
 				<a href="https://www.facebook.com" class="social"><i class="fa-brands fa-facebook"></i></a>
 				<a href="https://www.linkedin.com" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
@@ -28,17 +29,17 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="/login" method="POST">
+		<form action="/js/login.js" method="POST">
 			<h1>Login</h1>
 			<div class="social-container">
-                <div class="h_google_button h_google_center" data="google"><p class="png-google" class="fa-brands fa-google"alt=""></p><span class="h_google_text">Sign in with Google</span></div>
+                <a href="https://www.google.com" class="social"><i class="fa-brands fa-google"></i></a>
 				<a href="https://www.facebook.com" class="social"><i class="fa-brands fa-facebook"></i></a>
 				<a href="https://www.linkedin.com" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your account</span>
 			<input type="email" placeholder="Email" name="email" />
 			<input type="password" placeholder="Password" name="password"/>
-			<a href="/">Forgot your password?</a>
+			<a href="#">Forgot your password?</a>
 			<button>Sign In</button>
 			<a href="/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Home</a>
 		</form>
@@ -62,8 +63,11 @@
 <footer>
 	<p>
 		Created by <i class="fa fa-heart"></i> by
-		<a target="_blank" href="/aboutus">MVKLS here</a>.
+		<a target="_blank" href="/aboutus">MVKSL</a>
+		
+		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
 	</p>
 </footer>
+<script src="/js/login.js"></script>
 </body>
 </html>
